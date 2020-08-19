@@ -1,4 +1,4 @@
-# admin-panel-searcher
+# Admin Panel Searcher
 Admin panel searcher is a tool for finding administrator panels on websites.
 ## Technologies
 Project is created with:
