@@ -4,7 +4,8 @@ Admin panel searcher is a tool for finding administrator panels on websites.
 Project is created with:
 * Python 3.8.2
 * requests module
-* termcolor module
+* termcolor module<br/>
+## Modules
 If you don't have requests and termcolor module, install them using pip
 ```
 pip install requests
