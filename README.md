@@ -6,7 +6,7 @@ Project is created with:
 * requests module
 * termcolor module<br/>
 ## Modules
-If you don't have requests and termcolor module, install them using pip
+If you don't have requests and termcolor modules, install them using pip
 ```
 pip install requests
 pip install termcolor
