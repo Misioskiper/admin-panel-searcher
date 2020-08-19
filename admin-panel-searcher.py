@@ -1,4 +1,5 @@
 import requests
+from termcolor import colored
 
 #Techonology class
 class Technology:
@@ -18,16 +19,16 @@ class Technology:
 
         #If status code is between 200 and 300 page exists
         if status_code >= 200 and status_code < 300:
-            print(f"{URL} exists")
+            print(colored(f"{URL} exists", 'green'))
         #If status code is between 300 and 400 page probably exists but there's a redirection message
         elif status_code >= 300 and status_code < 400:
-            print(f"{URL} has {status_code} response code")
+            print(colored(f"{URL} has {status_code} response code", 'blue'))
         #If status code is between 400 and 500 page doesn't exist or you need authenticate yourself 
         elif status_code >= 400 and status_code < 500:
-            print(f"{URL} doesn't exist. {status_code} code")
+            print(colored(f"{URL} doesn't exist. {status_code} code", 'red'))
         else:
         #Other like 1xx codes or 5xx
-            print(f"{status_code} code")
+            print(colored(f"{status_code} code", 'blue'))
 
 #You can add your own technologies to this list
 technologies = [Technology("Wordpress", "/wp-admin"), Technology("Joomla", "/administrator"), Technology("Django", "/admin"), Technology("PHPmyadmin", "/phpmyadmin")]
